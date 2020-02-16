@@ -34,4 +34,31 @@ Uma vez que você tenha salvo essas alterações nesse **commit**, será possív
 
 ## Fluxo básico do git
 
-Primeiramente, é necessário  baixar o git. 
+* Primeiramente, é necessário  [baixar o git]({{site.baseurl}}git/baixar.html).
+
+* Após ter baixado, para criar um repositório, é necessário iniciar o repositório dentro da pasta do  seu projeto.
+
+~~~bash
+git init
+~~~
+
+* Após isso deverá configurar para colocar suas credenciais do git. [Mais informações>>]({{site.baseurl}}git/config)
+
+
+~~~bash
+git config --global user.name "Seu nome"
+
+git config --global user.email "Seu email"
+~~~
+
+* Depois você adiciona seus arquivos a stage área. [Mais informações>>]({{site.baseurl}}git/add)
+
+~~~bash
+git add .
+~~~
+
+* Depois você fará seu primeiro commit. [Mais informações>>]({{site.baseurl}}git/commit)
+
+~~~bash
+git commit -m "Mensagem referente as alterações"
+~~~
