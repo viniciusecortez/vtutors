@@ -1,9 +1,9 @@
 title: VTutors
-baseurl: "/vtutors" # the subpath of your site, e.g. /blog
+baseurl: "/vtutors/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-color_scheme: "dark"
 # Build settings
 theme: "just-the-docs"
 remote_theme: pmarsceill/just-the-docs
+search_enabled: true
