@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Git | Merges
-nav_order: 5
+nav_order: 6
 parent: Git
 ---
 

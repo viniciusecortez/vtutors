@@ -27,9 +27,11 @@ Ele coloca todas essas modificações dentro de uma pasta que transforma a pasta
 
 ## O que é um sistema de controle de versão
 
-Um sistema de controle de versão tem o objetivo de guardar as alterações que são feitas para ser possível voltar para um momento específico do código. Normalmente, esse grupo de alterações é agrupado. Esse grupo se chama, normalmente, de **commit**. 
+Um sistema de controle de versão tem o objetivo de guardar as alterações que são feitas para ser possível voltar para um momento específico do código. Normalmente, esse grupo de alterações é agrupado. Esse grupo se chama **commit**. 
 
 Uma vez que você tenha salvo essas alterações nesse **commit**, será possível voltar nele para conseguir programar a partir dele ou saber a autoria dele.
 
 
+## Fluxo básico do git
 
+Primeiramente, é necessário  baixar o git. 
