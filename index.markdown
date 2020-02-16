@@ -4,6 +4,7 @@
 
 layout: default
 title: Página Inicial
+nav_order: 1
 ---
 # Sobre o que é esse site
 
