@@ -1,3 +1,10 @@
+---
+layout: default
+title: Git
+permalink: /git
+---
+
+
 # Git
 
 ## O que é Git?
@@ -46,11 +53,11 @@ Por padrão essas confgurações são locais. Então é possível colocar a flag
 
 
 * **Stage Area** - É a área de todos os arquivos que estão esperando para entrar o próximo commit. Eles ficam nessa área apartir do momento que você digita do comando:
+
 ~~~bash
 git add <filename> # Para um arquivo específico
 # ou
 git add . # Para todos os arquivos 
-
 ~~~
 
 * **Commit** - É um pacote de alterações que tem como metadados o nome, email e horário que foi feito. Além disso, as próprias alterações também tem a hora que foram feitas. O comando para empacotar as alterações é justamente:
