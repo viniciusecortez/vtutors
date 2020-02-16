@@ -22,3 +22,82 @@ Um sistema de controle de versão tem o objetivo de guardar as alterações que 
 
 Uma vez que você tenha salvo essas alterações nesse **commit**, será possível voltar nele para conseguir programar a partir dele ou saber a autoria dele.
 
+
+## Definições
+
+* **Config** - É o comando que irão ser colocadas as configurações
+
+Para listá-las:
+~~~bash
+git config -l
+~~~
+
+Para configurar o nome e o email que irão aparecer nos commits:
+
+~~~bash 
+git config user.name "Seu nome"
+~~~
+
+~~~bash 
+git config user.email "Seu email"
+~~~
+
+Por padrão essas confgurações são locais. Então é possível colocar a flag: --global para conseguir definir para todos os repositórios que você tem. Essa diferença foi feita com base de você ter mais de um email, por exemplo, se tiver um email corporativo.
+
+
+* **Stage Area** - É a área de todos os arquivos que estão esperando para entrar o próximo commit. Eles ficam nessa área apartir do momento que você digita do comando:
+~~~bash
+git add <filename> # Para um arquivo específico
+# ou
+git add . # Para todos os arquivos 
+
+~~~
+
+* **Commit** - É um pacote de alterações que tem como metadados o nome, email e horário que foi feito. Além disso, as próprias alterações também tem a hora que foram feitas. O comando para empacotar as alterações é justamente:
+
+~~~bash
+git commit -m "Mensagem para identificar o que são as alterações"
+~~~
+
+Para mudar a mensagem do commit:
+~~~bash
+git commit -m "Nova mensagem" --amend
+~~~
+
+
+
+#### Branches
+
+* **Branch** - É uma ramificação ou galho de uma árvore de commits. Se você está trabalhando sem o conhecimento de branches. Provavelmente, você está trabalhando na branch padrão do git, a **master**. Porém, é possível criar uma ramificação, que terá seus próprios commits que ficarão em paralelo com outros commits. E, o que é normalmente feito, integrada a master por meio de um **merge**.
+
+Para criar um novo branch no commit atual:
+
+~~~bash
+git branch <nome branch> # Lembrando que o nome não deve conter espaços
+~~~
+
+* Para mudar para esse branch:
+
+~~~bash
+git checkout <nome branch>
+~~~
+
+* Para renomear seu branch
+
+~~~bash
+git branch <nome atual> -m <outro nome>
+~~~
+
+* Para deletar seu branch
+
+~~~bash
+git branch -D <nome> # Deve estar em outro branch para esse 'nome' ser deletado
+~~~
+
+
+
+* **Merge** - Isso irá mesclar um branch com o branch atual. Como se fosse unir ambos. Uma vez que foram unidos o branch que se uniu pode ser apagado sem ter a perda dos commits de estavam nele. O comando para fazer essa operação é:
+
+~~~bash
+git merge <outra branch>
+~~~
