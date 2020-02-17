@@ -14,3 +14,4 @@ git add <filename> # Para um arquivo específico
 # ou
 git add . # Para todos os arquivos 
 ~~~
+
